@@ -146,7 +146,7 @@ export default {
 				case `/${fakeUserID}`:
 					const fakeConfig = await get特洛伊Config(password, request.headers.get('Host'), sub, 'CF-Workers-SUB', RproxyIP, url, env);
 					return new Response(`${fakeConfig}`, { status: 200 });
-				case `/${password}/edit`:
+				case `/${password}/admin`:
 					const html = await KV(request, env);
 					return html;
 				case `/${password}`:
