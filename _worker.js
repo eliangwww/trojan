@@ -3285,7 +3285,7 @@ async function bestIP(request, env, txt = 'ADD.txt') {
             console.log(\`IP \${parsedIP.host}:\${parsedIP.port} 最终结果: \${displayLatency}ms (原始: \${bestResult.latency}ms, 共\${results.length}次有效测试)\`);
             
             // 生成显示格式
-            const comment = parsedIP.comment || 'CF优选IP';
+            const comment = parsedIP.comment || 'CloudFlare Inc.';
             const display = \`\${parsedIP.host}:\${parsedIP.port}#\${comment} \${displayLatency}ms\`;
             
             return {
